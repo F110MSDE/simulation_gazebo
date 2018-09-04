@@ -20,8 +20,8 @@ public:
     Converter(const ros::NodeHandle h)
     : nh_c(h)
     {
-        sub = nh_c.subscribe("/servo", 100, &Converter::subCallback, this);
-        pub = nh_c.advertise<f1tenth_controller::racecar>("/racecar_param", 10);
+        sub = nh_c.subscribe("/servo", 1, &Converter::subCallback, this);
+        pub = nh_c.advertise<f1tenth_controller::racecar>("/racecar_param", 1);
         ROS_INFO("start converter node");
         ROS_INFO("run your nodes for auto drive");
     }
