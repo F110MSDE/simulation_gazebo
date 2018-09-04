@@ -21,13 +21,13 @@ public:
     Connector(const ros::NodeHandle &h)
     : nh_cn(h)
     {
-        racecar_sub = nh_cn.subscribe("/racecar_param", 10, &Connector::subCallback, this);
-        left_front_wheel_velocity_pub = nh_cn.advertise<std_msgs::Float64>("/racecar/left_front_wheel_velocity_controller/command", 10);
-        right_front_wheel_velocity_pub = nh_cn.advertise<std_msgs::Float64>("/racecar/right_front_wheel_velocity_controller/command", 10);
-        left_rear_wheel_velocity_pub = nh_cn.advertise<std_msgs::Float64>("/racecar/left_rear_wheel_velocity_controller/command", 10);
-        right_rear_wheel_velocity_pub = nh_cn.advertise<std_msgs::Float64>("/racecar/right_rear_wheel_velocity_controller/command", 10);
-        left_steering_hinghe_position_pub = nh_cn.advertise<std_msgs::Float64>("/racecar/left_steering_hinge_position_controller/command", 10);
-        right_steering_hinghe_position_pub = nh_cn.advertise<std_msgs::Float64>("/racecar/right_steering_hinge_position_controller/command", 10);
+        racecar_sub = nh_cn.subscribe("/racecar_param", 1, &Connector::subCallback, this);
+        left_front_wheel_velocity_pub = nh_cn.advertise<std_msgs::Float64>("/racecar/left_front_wheel_velocity_controller/command", 1);
+        right_front_wheel_velocity_pub = nh_cn.advertise<std_msgs::Float64>("/racecar/right_front_wheel_velocity_controller/command", 1);
+        left_rear_wheel_velocity_pub = nh_cn.advertise<std_msgs::Float64>("/racecar/left_rear_wheel_velocity_controller/command", 1);
+        right_rear_wheel_velocity_pub = nh_cn.advertise<std_msgs::Float64>("/racecar/right_rear_wheel_velocity_controller/command", 1);
+        left_steering_hinghe_position_pub = nh_cn.advertise<std_msgs::Float64>("/racecar/left_steering_hinge_position_controller/command", 1);
+        right_steering_hinghe_position_pub = nh_cn.advertise<std_msgs::Float64>("/racecar/right_steering_hinge_position_controller/command", 1);
         ROS_INFO("start connector node");
     }
     void subCallback(const f1tenth_controller::racecar::ConstPtr& msg);
