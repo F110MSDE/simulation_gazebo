@@ -31,7 +31,7 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "key_controller");
     ros::NodeHandle nh;
 
-    ros::Publisher pub = nh.advertise<f1tenth_controller::racecar>("/racecar_param", 10);
+    ros::Publisher pub = nh.advertise<f1tenth_controller::racecar>("/racecar_param", 1);
     ros::Rate loop_rate(50);
 
     f1tenth_controller::racecar msg;
