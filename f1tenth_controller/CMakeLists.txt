@@ -50,3 +50,7 @@ add_dependencies(key_controller ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXP
 add_executable(converter src/converter.cpp)
 target_link_libraries(converter ${catkin_LIBRARIES})
 add_dependencies(converter ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(converter2 src/converter2.cpp)
+target_link_libraries(converter2 ${catkin_LIBRARIES})
+add_dependencies(converter2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
