@@ -1,8 +1,8 @@
 # simulation_gazebo
 SNUST MSDE f1_tenth simulation setting with gazebo  
 서울과학기술대학교 MSDE F1/10 Gazebo Simulation setup
-
-
+  
+  
 ---
 ## 1. Install
 ROS-kinetic in ubuntu 16.04  
@@ -53,9 +53,9 @@ source ~/.simulation_ws/devel/setup.bash
 ```bash
 $ source ~/.bashrc
 ```
-
-
-
+  
+  
+  
 ---
 ## 2. Run
 
