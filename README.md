@@ -4,7 +4,7 @@ SNUST MSDE f1_tenth simulation setting with gazebo
 
 
 ---
-## 1. 설치
+## 1. Install
 ROS-kinetic in ubuntu 16.04  
 Gazebo
 
@@ -54,8 +54,10 @@ source ~/.simulation_ws/devel/setup.bash
 $ source ~/.bashrc
 ```
 
+
+
 ---
-## 2. 실행
+## 2. Run
 
 simulation launch 파일 실행  
 TRACK 에 world에 연결할 track을 대신 입력
