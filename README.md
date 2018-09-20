@@ -75,6 +75,7 @@ $ rosrun han_auto_test publisher
 ```
 $ rosrun han_auto_test subscriber5
 ```
+![Alt text](gazebo_example.png)
 
 
 ## 3. Description
