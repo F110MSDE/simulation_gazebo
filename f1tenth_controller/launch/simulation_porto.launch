@@ -1,0 +1,13 @@
+<launch>
+    
+    <!-- Launch Gazebo -->
+    <include file="$(find f1tenth_gazebo)/launch/gazebo_porto.launch"/>
+
+    <!-- Launch controller -->
+    <include file="$(find f1tenth_control)/launch/racecar_control.launch"/>
+
+    <!-- Run connector node and converter node -->
+    <node name="sim_connector" pkg="f1tenth_controller" type="sim_connector" output="screen"/>
+    <node name="converter" pkg="f1tenth_controller" type="converter" output="screen"/>
+
+</launch>
