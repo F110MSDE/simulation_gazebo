@@ -2,6 +2,8 @@
 SNUST MSDE f1_tenth simulation setting with gazebo  
 서울과학기술대학교 MSDE F1/10 Gazebo Simulation setup
 
+
+---
 ## 1. 설치
 ROS-kinetic in ubuntu 16.04  
 Gazebo
@@ -50,4 +52,25 @@ source ~/.simulation_ws/devel/setup.bash
 저장후 모든 terminal 닫았다가 열거나, source bashrc 해주기
 ```bash
 $ source ~/.bashrc
+```
+
+---
+## 2. 실행
+
+simulation launch 파일 실행  
+TRACK 에 world에 연결할 track을 대신 입력
+``` bash
+$ roslaunch f1tenth_controller simulation_TRACK.launch
+```
+자율주행 알고리즘 노드 (publisher, subscriber) 실행
+
+ex)  Italy track 에서 subscriber5 test
+```bash
+$ roslaunch f1tenth_controller simulation_italy.launch
+```
+```bash
+$ rosrun han_auto_test publisher
+```
+```
+$ rosrun han_auto_test subscriber5
 ```
