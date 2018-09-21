@@ -11,7 +11,7 @@ Gazebo
 ### 1.1. ros gazebo 패키지 설치하기
 
 ```bash
-$ sudo apt-get install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control
+$ sudo apt-get install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control ros-kinetic-joint-state-controller
 ```
 
 
