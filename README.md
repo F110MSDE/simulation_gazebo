@@ -63,8 +63,8 @@ TRACK 에 world에 연결할 track을 대신 입력
 ``` bash
 $ roslaunch f1tenth_controller simulation_TRACK.launch
 ```
-자율주행 알고리즘 노드 (publisher, subscriber) 실행
-
+자율주행 알고리즘 노드 (publisher, subscriber) 실행  
+  
 ex)  Italy track 에서 subscriber5 test
 ```bash
 $ roslaunch f1tenth_controller simulation_italy.launch
