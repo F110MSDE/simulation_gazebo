@@ -47,7 +47,7 @@ $ gedit ~/.bashrc
 ```
 아래 명령어 추가
 ```bash
-source ~/.simulation_ws/devel/setup.bash
+source ~/simulation_ws/devel/setup.bash
 ```
 저장후 모든 terminal 닫았다가 열거나, source bashrc 해주기
 ```bash
