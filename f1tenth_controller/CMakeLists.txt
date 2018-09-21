@@ -22,10 +22,7 @@ generate_messages(
 )
 
 catkin_package(
-  INCLUDE_DIRS include
-  LIBRARIES f1tenth_controller
   CATKIN_DEPENDS roscpp std_msgs
-  DEPENDS system_lib
 )
 
 ###########
