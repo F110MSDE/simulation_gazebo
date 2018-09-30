@@ -1,0 +1,20 @@
+<launch>
+
+	<!-- Delet racecar model -->
+	<node pkg="rosservice" type="rosservice" name="delete_model" args="call gazebo/delete_model '{model_name: racecar}'"/>
+
+
+
+
+	<!-- Load the URDF into the ROS Parameter Server -->
+    <param name="robot_description" command="$(find xacro)/xacro '$(find f1tenth_description)/urdf/racecar.xacro'" />
+
+    <!-- Spawn a robot into Gazebo -->
+    <node name="spawn_model" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 
+    args="-urdf -z 1 -Y -1.5708 -model racecar -param robot_description" />
+
+	<!-- Launch controller -->
+    <include file="$(find f1tenth_control)/launch/racecar_control.launch"/>
+
+
+</launch>

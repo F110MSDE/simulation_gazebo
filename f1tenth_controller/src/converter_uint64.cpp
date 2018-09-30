@@ -49,26 +49,17 @@ void Converter::convert_value()
 
     switch(this->temp_velocity)
     {
+    case 4:
+        this->velocity = 0;
+        break;
     case 60:
-        this->velocity = 5;
-        break;
-    case 90:
-        this->velocity = 28;
-        break;
-    case 97:
-        this->velocity = 30;
-        break;
-    case 98:
         this->velocity = 34;
         break;
-    case 99:
+    case 110:
         this->velocity = 38;
         break;
-    case 100:
-        this->velocity = 50;
-        break;   
-    case 107:
-        this->velocity = 70;
+    case 999:
+        this->velocity = 60;
         break;   
     }
 
