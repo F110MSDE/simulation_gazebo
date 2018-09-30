@@ -1,7 +1,7 @@
 <launch>
     
     <!-- Launch Gazebo -->
-    <include file="$(find f1tenth_gazebo)/launch/gazebo.launch"/>
+    <include file="$(find f1tenth_gazebo)/launch/gazebo_italy.launch"/>
 
     <!-- Launch controller -->
     <include file="$(find f1tenth_control)/launch/racecar_control.launch"/>

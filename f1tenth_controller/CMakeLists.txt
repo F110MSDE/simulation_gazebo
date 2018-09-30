@@ -48,6 +48,10 @@ add_executable(converter src/converter.cpp)
 target_link_libraries(converter ${catkin_LIBRARIES})
 add_dependencies(converter ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
+add_executable(converter_uint64 src/converter_uint64.cpp)
+target_link_libraries(converter_uint64 ${catkin_LIBRARIES})
+add_dependencies(converter_uint64 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
 add_executable(converter2 src/converter2.cpp)
 target_link_libraries(converter2 ${catkin_LIBRARIES})
 add_dependencies(converter2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
