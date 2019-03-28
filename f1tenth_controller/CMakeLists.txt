@@ -55,3 +55,11 @@ add_dependencies(converter_uint64 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_E
 add_executable(converter2 src/converter2.cpp)
 target_link_libraries(converter2 ${catkin_LIBRARIES})
 add_dependencies(converter2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(converter_vesc src/converter_vesc.cpp)
+target_link_libraries(converter_vesc ${catkin_LIBRARIES})
+add_dependencies(converter_vesc ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(sim_connector_vesc src/sim_connector_vesc.cpp)
+target_link_libraries(sim_connector_vesc ${catkin_LIBRARIES})
+add_dependencies(sim_connector_vesc ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
