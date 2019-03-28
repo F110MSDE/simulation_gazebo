@@ -1,6 +1,12 @@
 # simulation_gazebo
 SNUST MSDE f1_tenth simulation setting with gazebo  
 서울과학기술대학교 MSDE F1/10 Gazebo Simulation setup
+
+---
+2019. 3. 28 수정  
+1. vesc 버젼 시뮬레이션 추가(이테리맵)
+2. mode2 일때 publisher에서 속도 제어 코드 추가(han_auto_test)
+3. 2 상황 시뮬레이션상황에도 연동가능하도록 코드수정
   
   
 ---
